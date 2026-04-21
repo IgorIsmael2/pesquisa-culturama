@@ -1,11 +1,74 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Pesquisa Culturama</title>
-</head>
-<body>
-    
-</body>
+  </head>
+  <body>
+    <header>
+      <h1>Pesquisa Online</h1>
+    </header>
+    <main>
+      <section>
+        <form action="" method="post">
+          <fieldset>
+            <legend>Dados Pessoais</legend>
+
+            <label for="userName">Nome:</label>
+            <input
+              type="text"
+              name="userName"
+              id="userName"
+              placeholder="Digite seu nome"
+              required
+            />
+
+            <label for="birthDate">Data de Nascimento:</label>
+            <input 
+              type="date"
+              name="birthDate" 
+              id="birthDate" />
+
+            <label for="userAge">Idade:</label>
+            <input
+              type="number"
+              name="userAge"
+              id="userAge"
+              min="12"
+              max="100"
+              placeholder="Digite sua idade"
+              required
+            />
+
+            <label for="userEmail">E-mail:</label>
+            <input
+              type="email"
+              name="userEmail"
+              id="userEmail"
+              placeholder="exemplo@email.com"
+              required
+            />
+
+            <label for="userPhone">Telefone:</label>
+            <input
+              type="tel"
+              name="userPhone"
+              id="userPhone"
+              pattern="\(\d{2}\) \d{5}-\d{4}"
+              placeholder="(99) 99999-9999"
+              title="Digite um número de telefone no formato (99) 99999-9999"
+            />
+
+            <label for="userFile">Upload de Arquivo:</label>
+            <input  
+              type="file"
+              name="userFile"
+              id="userFile" />
+          </fieldset>
+          <button type="submit">Enviar</button>
+        </form>
+      </section>
+    </main>
+  </body>
 </html>
