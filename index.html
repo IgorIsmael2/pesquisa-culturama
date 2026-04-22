@@ -12,7 +12,7 @@
     <main>
       <section>
         <form action="" method="post">
-          <fieldset>
+          
             <legend>Dados Pessoais</legend>
 
             <label for="userName">Nome:</label>
@@ -66,6 +66,36 @@
               accept="image/*"
               name="userImage"
               id="userImage" />
+          </fieldset>
+
+          <fieldset>
+            <legend>Perfil</legend>
+             
+           <p>Gênero:</p>
+           <input
+              type="radio"
+              name="userGender"
+              id="genderMale"
+              value="Masculino"
+            />
+            <label for="genderMale">Masculino</label>
+
+              <input
+              type="radio"
+              name="userGender"
+              id="genderFemale"
+              value="Feminino"
+            />
+            <label for="genderFemale">Feminino</label>
+
+              <input
+              type="radio"
+              name="userGender"
+              id="genderNotInformed"
+              value="notInformed"
+            />
+            <label for="genderNotInformed">Prefiro não informar</label>
+
           </fieldset>
           <button type="submit">Enviar</button>
         </form>
