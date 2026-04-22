@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-br">
   <head>
     <meta charset="UTF-8" />
@@ -12,7 +12,7 @@
     <main>
       <section>
         <form action="" method="post">
-          
+          <fieldset>
             <legend>Dados Pessoais</legend>
 
             <label for="userName">Nome:</label>
@@ -25,8 +25,8 @@
             />
 
             <label for="birthDate">Data de Nascimento:</label>
-            <input 
-              type="date"
+            <input
+              type="date" 
               name="birthDate" 
               id="birthDate" />
 
@@ -61,18 +61,19 @@
             />
 
             <label for="userImage">Upload de Foto:</label>
-            <input  
+            <input
               type="file"
               accept="image/*"
               name="userImage"
-              id="userImage" />
+              id="userImage"
+            />
           </fieldset>
 
           <fieldset>
             <legend>Perfil</legend>
-             
-           <p>Gênero:</p>
-           <input
+
+            <p>Gênero:</p>
+            <input
               type="radio"
               name="userGender"
               id="genderMale"
@@ -80,7 +81,7 @@
             />
             <label for="genderMale">Masculino</label>
 
-              <input
+            <input
               type="radio"
               name="userGender"
               id="genderFemale"
@@ -88,13 +89,22 @@
             />
             <label for="genderFemale">Feminino</label>
 
-              <input
+            <input
               type="radio"
               name="userGender"
               id="genderNotInformed"
               value="notInformed"
             />
             <label for="genderNotInformed">Prefiro não informar</label>
+
+            <label for="maritalStatus">Estado Civil:</label>
+            <select name="maritalStatus" id="maritalStatus" required>
+                <option value="notInformed" disabled selected>Selecione</option>
+                <option value="solteiro">Solteiro(a)</option>
+                <option value="casado">Casado(a)</option>
+                <option value="divorciado">Divorciado(a)</option>
+                <option value="uniaoEstavel">União Estável</option>
+            </select>                   
 
           </fieldset>
           <button type="submit">Enviar</button>
