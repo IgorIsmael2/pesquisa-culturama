@@ -135,6 +135,33 @@
       
           </fieldset>
 
+          <fieldset>
+            <legend>Opiniões</legend>
+
+            <div class="form-group">
+              <p>Escala de satisfação:</p>
+              <div class="radio-group">
+                <input type="radio" name="userSatisfaction" id="otima" value="otima" required/>
+                <label for="otima">Ótima</label>
+
+                <input type="radio" name="userSatisfaction" id="boa" value="boa" />
+                <label for="boa">Boa</label>
+
+                <input type="radio" name="userSatisfaction" id="regular" value="regular" />
+                <label for="regular">Regular</label>
+
+                <input type="radio" name="userSatisfaction" id="ruim" value="ruim" />
+                <label for="ruim">Ruim</label>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="suggestions">Sugestões:</label>
+              <textarea name="userSuggestions" id="suggestions" placeholder="Escreva aqui sua opinião..."></textarea>
+            </div>
+
+          </fieldset>
+
           <div class="form-actions">
             <button type="submit">Enviar Pesquisa</button>
           </div>
