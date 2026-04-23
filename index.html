@@ -1,24 +1,43 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-br">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="culturama-favicon.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
     <title>Pesquisa Culturama</title>
   </head>
   <body>
     <header>
+      <img src="img/logo-culturama.png" alt="Logo Culturama" class="logo" />
       <h1>Pesquisa Online</h1>
     </header>
     <main>
       <section>
         <form action="" method="post">
-          
           <fieldset>
             <legend>Dados Pessoais</legend>
 
             <div class="form-group">
               <label for="name">Nome:</label>
-              <input type="text" name="userName" id="name" placeholder="Digite seu nome" required />
+              <input
+                type="text"
+                name="userName"
+                id="name"
+                placeholder="Digite seu nome"
+                required
+              />
             </div>
 
             <div class="form-group">
@@ -28,17 +47,38 @@
 
             <div class="form-group">
               <label for="age">Idade:</label>
-              <input type="number" name="userAge" id="age" min="12" max="100" placeholder="Digite sua idade" required />
+              <input
+                type="number"
+                name="userAge"
+                id="age"
+                min="12"
+                max="100"
+                placeholder="Digite sua idade"
+                required
+              />
             </div>
 
             <div class="form-group">
               <label for="email">E-mail:</label>
-              <input type="email" name="userEmail" id="email" placeholder="exemplo@email.com" required />
+              <input
+                type="email"
+                name="userEmail"
+                id="email"
+                placeholder="exemplo@email.com"
+                required
+              />
             </div>
 
             <div class="form-group">
               <label for="phoneNumber">Telefone:</label>
-              <input type="tel" name="userPhoneNumber" id="phoneNumber" pattern="\(\d{2}\) \d{5}-\d{4}" placeholder="(99) 99999-9999" title="Digite um número de telefone no formato (99) 99999-9999" />
+              <input
+                type="tel"
+                name="userPhoneNumber"
+                id="phoneNumber"
+                pattern="\(\d{2}\) \d{5}-\d{4}"
+                placeholder="(99) 99999-9999"
+                title="Digite um número de telefone no formato (99) 99999-9999"
+              />
             </div>
 
             <div class="form-group">
@@ -53,13 +93,28 @@
             <div class="form-group">
               <p>Gênero:</p>
               <div class="radio-group">
-                <input type="radio" name="userGender" id="masc" value="Masculino" />
+                <input
+                  type="radio"
+                  name="userGender"
+                  id="masc"
+                  value="Masculino"
+                />
                 <label for="masc">Masculino</label>
 
-                <input type="radio" name="userGender" id="fem" value="Feminino" />
+                <input
+                  type="radio"
+                  name="userGender"
+                  id="fem"
+                  value="Feminino"
+                />
                 <label for="fem">Feminino</label>
 
-                <input type="radio" name="userGender" id="notInformed" value="notInformed" />
+                <input
+                  type="radio"
+                  name="userGender"
+                  id="notInformed"
+                  value="notInformed"
+                />
                 <label for="notInformed">Prefiro não informar</label>
               </div>
             </div>
@@ -86,7 +141,12 @@
 
             <div class="form-group">
               <label for="city">Cidade:</label>
-              <input type="text" name="userCity" id="city" placeholder="Digite o nome da sua cidade" />
+              <input
+                type="text"
+                name="userCity"
+                id="city"
+                placeholder="Digite o nome da sua cidade"
+              />
             </div>
           </fieldset>
 
@@ -96,43 +156,68 @@
             <div class="form-group">
               <p>Redes Sociais:</p>
               <div class="checkbox-item">
-                <input type="checkbox" name="social" id="facebook" value="facebook" />
+                <input
+                  type="checkbox"
+                  name="social"
+                  id="facebook"
+                  value="facebook"
+                />
                 <label for="facebook">Facebook</label>
               </div>
 
               <div class="checkbox-item">
-                <input type="checkbox" name="social" id="instagram" value="instagram" />
+                <input
+                  type="checkbox"
+                  name="social"
+                  id="instagram"
+                  value="instagram"
+                />
                 <label for="instagram">Instagram</label>
               </div>
 
               <div class="checkbox-item">
-                <input type="checkbox" name="social" id="twitter" value="twitter" />
+                <input
+                  type="checkbox"
+                  name="social"
+                  id="twitter"
+                  value="twitter"
+                />
                 <label for="twitter">Twitter</label>
               </div>
 
               <div class="checkbox-item">
-                <input type="checkbox" name="social" id="linkedin" value="linkedin" />
+                <input
+                  type="checkbox"
+                  name="social"
+                  id="linkedin"
+                  value="linkedin"
+                />
                 <label for="linkedin">LinkedIn</label>
               </div>
             </div>
-                <div class="form-group">
-                  <label for="musicStyle">Estilos Musicais:</label>
-                  <input list="stylestypes" type="text" name="userMusicStyle" id="musicStyle" placeholder="Selecione ou digite..."/>
-                  <datalist id="stylestypes">
-                    <option value="Rock"></option>  
-                    <option value="Pop"></option>
-                    <option value="Sertanejo"></option>
-                    <option value="Funk"></option>
-                    <option value="MPB"></option>
-                    <option value="Eletrônica"></option>
-                  </datalist>
-                </div>
+            <div class="form-group">
+              <label for="musicStyle">Estilos Musicais:</label>
+              <input
+                list="stylestypes"
+                type="text"
+                name="userMusicStyle"
+                id="musicStyle"
+                placeholder="Selecione ou digite..."
+              />
+              <datalist id="stylestypes">
+                <option value="Rock"></option>
+                <option value="Pop"></option>
+                <option value="Sertanejo"></option>
+                <option value="Funk"></option>
+                <option value="MPB"></option>
+                <option value="Eletrônica"></option>
+              </datalist>
+            </div>
 
-                <div class="form-group">
-                  <label for="favoriteColor">Cor Favorita:</label>
-                  <input type="color" name="userFavoriteColor" id="favoriteColor"/>
-                </div>
-      
+            <div class="form-group">
+              <label for="favoriteColor">Cor Favorita:</label>
+              <input type="color" name="userFavoriteColor" id="favoriteColor" />
+            </div>
           </fieldset>
 
           <fieldset>
@@ -141,40 +226,76 @@
             <div class="form-group">
               <p>Escala de satisfação:</p>
               <div class="radio-group">
-                <input type="radio" name="userSatisfaction" id="otima" value="otima" required/>
+                <input
+                  type="radio"
+                  name="userSatisfaction"
+                  id="otima"
+                  value="otima"
+                  required
+                />
                 <label for="otima">Ótima</label>
 
-                <input type="radio" name="userSatisfaction" id="boa" value="boa" />
+                <input
+                  type="radio"
+                  name="userSatisfaction"
+                  id="boa"
+                  value="boa"
+                />
                 <label for="boa">Boa</label>
 
-                <input type="radio" name="userSatisfaction" id="regular" value="regular" />
+                <input
+                  type="radio"
+                  name="userSatisfaction"
+                  id="regular"
+                  value="regular"
+                />
                 <label for="regular">Regular</label>
 
-                <input type="radio" name="userSatisfaction" id="ruim" value="ruim" />
+                <input
+                  type="radio"
+                  name="userSatisfaction"
+                  id="ruim"
+                  value="ruim"
+                />
                 <label for="ruim">Ruim</label>
               </div>
             </div>
 
             <div class="form-group">
               <label for="suggestions">Sugestões:</label>
-              <textarea name="userSuggestions" id="suggestions" placeholder="Escreva aqui sua opinião..."></textarea>
+              <textarea
+                name="userSuggestions"
+                id="suggestions"
+                placeholder="Escreva aqui sua opinião..."
+              ></textarea>
             </div>
-
           </fieldset>
 
           <fieldset>
             <legend>Confirmações</legend>
 
             <div class="form-group checkbox-item">
-              <input type="checkbox" name="userLgpd" id="lgpdTerms" value="accepted" required />
+              <input
+                type="checkbox"
+                name="userLgpd"
+                id="lgpdTerms"
+                value="accepted"
+                required
+              />
               <label for="lgpdTerms">Aceito participar da pesquisa</label>
             </div>
 
             <div class="form-group checkbox-item">
-              <input type="checkbox" name="userGetResults" id="getResults" value="accepted"/>
-              <label for="getResults">Desejo receber o resultado por email</label>
+              <input
+                type="checkbox"
+                name="userGetResults"
+                id="getResults"
+                value="accepted"
+              />
+              <label for="getResults"
+                >Desejo receber o resultado por email</label
+              >
             </div>
-
           </fieldset>
 
           <div class="form-actions">
