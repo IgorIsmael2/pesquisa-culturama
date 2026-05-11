@@ -75,10 +75,10 @@
                 type="tel"
                 name="userPhoneNumber"
                 id="phoneNumber"
-                pattern="\(\d{2}\) \d{5}-\d{4}"
-                placeholder="(99) 99999-9999"
-                title="Digite um número de telefone no formato (99) 99999-9999"
-              />
+                pattern= "[0-9] {11}"
+                placeholder="DDD + número sem espaços ou hifen" aria-describedby="phoneHep"              
+                />
+                <small id="phoneHep">preencha com 11 dígitos no formato: DDD + número sem espaços ou hifen</small>
             </div>
 
             <div class="form-group">
