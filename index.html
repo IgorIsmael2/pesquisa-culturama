@@ -83,7 +83,8 @@
 
             <div class="form-group">
               <label for="image">Upload de Foto:</label>
-              <input type="file" accept="image/*" name="userImage" id="image" />
+              <input type="file" accept="image/*" name="userImage" id="image" aria-describedby="imageHelp"/>
+              <small id="imageHelp">Envie uma foto no formato PNG ou JPEG</small>
             </div>
           </fieldset>
 
@@ -324,8 +325,8 @@
           </fieldset>
 
           <div class="form-actions">
-            <button type="submit">Enviar</button>
-            <button type="reset">Limpar</button>
+            <button type="submit" aria-label="Enviar os dados do formulário">Enviar</button>
+            <button type="reset" aria-label="Limpar o formulário">Limpar</button>
           </div>
         </form>
       </section>
